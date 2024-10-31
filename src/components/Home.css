@@ -1,0 +1,41 @@
+/* Main logo text */
+.logo-main {
+    font-size: 2em; /* Default size for larger screens */
+    font-weight: bold;
+    color: #000;
+    display: inline-block;
+}
+
+/* Responsive styles for tablets and below */
+@media (max-width: 768px) {
+    .logo-main {
+        font-size: 1.5em; /* Smaller logo size for tablets */
+    }
+
+    /* Add a better layout for the header */
+    .header {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align to start */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .header {
+        padding: 15px; /* Less padding on mobile */
+    }
+
+    .logo-main {
+        font-size: 1.2em; /* Smaller logo size for mobile */
+        z-index: 1001; /* Ensure logo is above other elements */
+    }
+
+    .logo-subtext {
+        font-size: 0.7em; /* Smaller subtext */
+    }
+
+    .nav a {
+        font-size: 0.9em; /* Smaller font size for nav links */
+    }
+}

@@ -1,0 +1,48 @@
+/* Global Reset */
+html, body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  padding-top: 60px; 
+  height: 100%; /* Ensure full height for body */
+}
+
+.hero {
+  background-color: #ffe5b4;
+  border-radius: 8px;
+  text-align: center;
+ 
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+#menu {
+  margin-top: 20px;
+}
+
+.menu-item {
+  display: inline-block;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+}
+
+.pizza-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.menu-item h4 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.menu-item p {
+  margin: 5px 0;
+}
+/* src/App.css */
+

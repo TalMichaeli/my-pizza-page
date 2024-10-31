@@ -1,0 +1,120 @@
+.description-text {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  padding: 20px;
+  text-align: right;
+  margin: 20px auto; /* Center the container */
+  border-radius: 8px;
+  max-width: 800px;
+  /* Removed specific margins for better responsiveness */
+}
+
+.description-text h3 {
+  font-size: 2.5em; /* Increased font size */
+  margin: 0 0 20px 0;
+  font-family: 'Rubik Bubbles', cursive;
+}
+
+.description-text p {
+  font-family: 'Rubik Moonrocks', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em; /* Increased font size */
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Link container styling */
+.link-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  justify-content: space-around; /* Center links in the container */
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container */
+}
+
+.link-container a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px; /* Add margin between links */
+  flex: 1 1 150px; /* Allow flexible sizing */
+}
+
+.link-container img {
+  border-radius: 50%;
+  width: 100px; /* Responsive width */
+  height: 100px; /* Responsive height */
+  object-fit: cover;
+  border: 4px solid black;
+}
+
+.link-container figure {
+  text-align: center;
+}
+
+.link-container figcaption {
+  font-size: 1em; /* Adjust font size */
+  margin-top: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .description-text {
+    padding: 15px; /* Less padding on smaller screens */
+    margin: 10px 5%; /* Add margin on smaller screens */
+  }
+
+  .description-text h3 {
+    font-size: 2em; /* Decrease font size */
+  }
+
+  .description-text p {
+    font-size: 1.2em; /* Decrease font size */
+  }
+
+  .link-container {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .link-container a {
+    flex: 1 1 45%; /* Adjust size for smaller screens */
+  }
+
+  .link-container img {
+    width: 80px; /* Smaller image size */
+    height: 80px; /* Smaller image size */
+  }
+
+  .link-container figcaption {
+    font-size: 0.9em; /* Smaller caption font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .description-text {
+    margin: 5px; /* Less margin on very small screens */
+    padding: 10px; /* Less padding */
+  }
+
+  .description-text h3 {
+    font-size: 1.8em; /* Decrease font size */
+  }
+
+  .description-text p {
+    font-size: 1em; /* Decrease font size */
+  }
+
+  .link-container a {
+    flex: 1 1 100%; /* Stack links on very small screens */
+  }
+
+  .link-container img {
+    width: 60px; /* Smaller image size */
+    height: 60px; /* Smaller image size */
+  }
+
+  .link-container figcaption {
+    font-size: 0.8em; /* Smaller caption font size */
+  }
+}

@@ -1,0 +1,18 @@
+.link-container {
+    text-align: center; /* Center text under images */
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Text color */
+    margin: 0 10px; /* Space between links */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.link-image {
+    width: 100px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.link-container:hover {
+    transform: scale(1.05); /* Scale link on hover */
+}

@@ -1,0 +1,45 @@
+.hero {
+    background-image: url('https://www.pizzanapoletana.org/struttura/pagine_bicolor/mobile/disciplinare_avpn_2.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    height: 400px; /* Default height for larger screens */
+    display: flex; /* Center the content */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 0px; /* Padding for text */
+    position: relative; /* For positioning if needed */
+    margin: 0; /* Remove margin */
+}
+
+/* Optional: Style for the heading */
+.hero-content h2 {
+    font-size: 1.82em; /* Default font size for larger screens */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+    margin: 0; /* Remove default margin */
+}
+
+/* Responsive styles for tablets and below */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px; /* Reduce height for tablets */
+        padding: 15px; /* Adjust padding for tablets */
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em; /* Smaller font size for tablets */
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .hero {
+        height: 200px; /* Further reduce height for mobile */
+        padding: 10px; /* Less padding for mobile */
+    }
+
+    .hero-content h2 {
+        font-size: 1.2em; /* Smaller font size for mobile */
+    }
+}

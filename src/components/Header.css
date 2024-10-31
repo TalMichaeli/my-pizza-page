@@ -1,0 +1,211 @@
+/* Header container */
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    background-color: #f4f1eb; /* Soft red for pizza theme */
+    padding: 15px 30px; /* Adjust as needed */
+    border-bottom: 2px solid #e0e0e0; /* Light border */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 0; /* No space at the top */
+    direction: rtl; /* Right-to-left reading */
+    position: fixed; /* Fix the header to the top */
+    top: 0; /* Position at the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+    width: 100%; /* Cover full width */
+    height: 15%;
+    z-index: 1000; /* Above other content */
+}
+
+/* Logo container */
+.logo-text {
+    text-align: right; /* Align logo text to the right */
+    margin-right: 80px; /* Space from the edge */
+}
+
+/* Main logo text */
+.logo-main {
+    text-decoration: none; /* Remove underline from link */
+    color: #000; /* Set logo color */
+}
+
+/* Dot between logo parts */
+.logo-dot {
+    color: #000;
+    font-size: 1.5em;
+    vertical-align: top;
+    margin-right: -250px; /* Adjust for right-to-left */
+}
+
+/* Subtext styling */
+.logo-subtext {
+    font-size: 0.8em;
+    color: #333;
+    margin: 0;
+    line-height: 1.2em;
+    font-weight: lighter;
+}
+
+/* Navigation links */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    color: rgb(0, 0, 0); /* Link color */
+    text-decoration: none; /* No underline */
+    font-size: 1em; /* Link font size */
+    font-family: 'Roboto', sans-serif;
+    position: relative; /* Needed for the underline effect */
+}
+
+/* Underline effect on hover */
+.nav a:hover {
+    color: rgb(241, 117, 0); /* Keep the text color on hover */
+}
+
+.nav a::after {
+    content: ''; /* Create a pseudo-element */
+    display: block; /* Make it a block element */
+    height: 2px; /* Height of the underline */
+    background: white; /* Color of the underline */
+    width: 0; /* Start with 0 width */
+    transition: width 0.3s; /* Smooth transition */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align it to the left */
+    bottom: -5px; /* Position it below the text */
+}
+
+.nav a:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+/* Navigation link styling */
+.nav-link {
+    color: white; /* Change text color to white */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Increase padding for better touch targets */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
+    color: #000; /* Change text color on hover */
+}
+
+/* Active link effect */
+.nav-link:active {
+    transform: scale(0.95); /* Click effect */
+}
+
+/* Menu link styling */
+.menu-link {
+    color: #000; /* Same color as other links */
+    text-decoration: none; /* No underline */
+    padding: 5px 10px; /* Optional padding */
+    border-radius: 5px; /* Optional rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    
+}
+
+/* Menu link hover effect */
+.menu-link:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+    color: #007bff; /* Change color on hover */
+}
+
+/* Menu icon styling */
+.menu-icon {
+    display: none; /* Show the menu icon */
+    flex-direction: column; /* Stack bars vertically */
+    cursor: pointer; /* Pointer on hover */
+    position: absolute; /* Position it absolutely within the header */
+    top: 15px; /* Adjust this value to move it up/down */
+    left: 30px; /* Adjust this value for horizontal placement */
+}
+
+/* Bar inside the menu icon */
+.bar {
+    height: 4px; /* Height of each bar */
+    width: 25px; /* Width of each bar */
+    background-color: #000; /* Change to black for better visibility */
+    margin: 3px 0; /* Space between bars */
+}
+
+/* Responsive styles for tablets and below */
+@media (max-width: 892px) {
+    .nav {
+        display: none; /* Hide navigation links */
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 10px; /* Space between links */
+        position: absolute; /* Positioning */
+        top: 60px; /* Position below the header */
+        left: 0; /* Align to the left */
+        background-color: #f4f1eb; /* Background for dropdown */
+        width: 100%; /* Full width */
+        padding: 10px; /* Padding for dropdown */
+        z-index: 1000; /* Above other elements */
+    }
+
+    .nav.open {
+        display: flex; /* Show navigation links when open */
+    }
+
+    .menu-icon {
+        display: flex; /* Show menu icon on small screens */
+    }
+
+    .logo-main {
+        font-size: 1.5em; /* Smaller logo size for tablets */
+    }
+    .logo-dot {
+        color: #000;
+        font-size: 1.5em;
+        vertical-align: top;
+        margin-right: -190px; /* Adjust for right-to-left */
+    }
+    .small-logo {
+        font-size: 1.5em; /* Change this value to make the logo smaller */
+        transition: font-size 0.3s, transform 0.3s; /* Smooth transition for size change */
+        transform: translateY(-19%); /* Move the logo up */
+    }
+    /* Add a better layout for the header */
+    .header {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align to start */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .header {
+        padding: 15px; /* Less padding on mobile */
+    }
+
+    .logo-main {
+        font-size: 1.2em; /* Smaller logo size for mobile */
+        z-index: 1001; /* Ensure logo is above other elements */
+    }
+    .logo-dot {
+        color: #000;
+        font-size: 1.5em;
+        vertical-align: top;
+        margin-right: -150px; /* Adjust for right-to-left */
+    }
+    .logo-subtext {
+        font-size: 0.7em; /* Smaller subtext */
+    }
+    .small-logo {
+        font-size: 1.5em; /* Change this value to make the logo smaller */
+        transition: font-size 0.3s, transform 0.3s; /* Smooth transition for size change */
+        transform: translateY(-22%); /* Move the logo up */
+    }
+    .nav a {
+        font-size: 0.9em; /* Smaller font size for nav links */
+    }
+}
