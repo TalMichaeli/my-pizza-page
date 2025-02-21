@@ -1,0 +1,34 @@
+/* AccessibilityButton.css */
+
+/* Style for the main button */
+.icon-button {
+    background-color: white; /* Fallback color */
+    border-radius: 50%;
+    color: white;
+    width: 60px; /* Set width for the button */
+    height: 60px; /* Set height for the button */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the accessibility option buttons */
+  .option-button {
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  /* Hide the accessibility button on small screens */
+  @media (max-width: 1160px) {
+    .icon-button {
+      display: none; /* Hide the container */
+    }
+  }
+  

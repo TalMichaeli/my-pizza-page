@@ -1,0 +1,66 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #f4f1eb; /* Dark background for contrast */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 20px;
+  }
+.text{
+  color: black;
+  }
+  .footer-buttons {
+    display: flex;
+   justify-content: center;/* Center the buttons */
+    gap: 15px; /* Space between buttons */
+    margin-bottom: 10px; /* Space below buttons */
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    max-width: 3510px;
+    margin: auto;
+  }  
+  .footer-button {
+    background-color: #05050525; /* Green button color */
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-color: rgba(19, 83, 102, 0.26);
+    border-style: solid;
+    border-radius: 15px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.5s ease; /* Smooth hover effect */
+    
+  }
+  
+  .footer-button:hover {
+    background-color: #f9e1aa; /* Darker green on hover */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .footer-buttons {
+      
+      flex-direction: column;
+      padding: 10px 125px;
+      
+    }
+    
+    .footer-button {
+      width: 100%; /* Full width for buttons */
+      margin-bottom: 10px; /* Space below buttons */
+      align-content: center;
+    }
+  }
+  @media (max-width: 600px) {
+    .footer-buttons {
+      
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 8px; /* Reduced gap to fit better on small screens */
+        padding: 0 10px; /* Side padding for spacing */
+       
+    }
+
+    .footer-button {
+        padding: 8px 10px; /* Smaller padding for better fit */
+        font-size: 14px; /* Slightly smaller font for mobile */
+    }
+}

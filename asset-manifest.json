@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/pizza-page/static/css/main.5851b5a0.css",
+    "main.js": "/pizza-page/static/js/main.4657b7e4.js",
+    "static/js/488.2c2c4401.chunk.js": "/pizza-page/static/js/488.2c2c4401.chunk.js",
+    "static/media/NeapolitanPizza.jpeg": "/pizza-page/static/media/NeapolitanPizza.162ce50974d457060df2.jpeg",
+    "static/media/delivery.png": "/pizza-page/static/media/delivery.8fd6819d8e52e09365bc.png",
+    "static/media/oven.png": "/pizza-page/static/media/oven.3cd4928b869139e05ca9.png",
+    "index.html": "/pizza-page/index.html",
+    "main.5851b5a0.css.map": "/pizza-page/static/css/main.5851b5a0.css.map",
+    "main.4657b7e4.js.map": "/pizza-page/static/js/main.4657b7e4.js.map",
+    "488.2c2c4401.chunk.js.map": "/pizza-page/static/js/488.2c2c4401.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5851b5a0.css",
+    "static/js/main.4657b7e4.js"
+  ]
+}

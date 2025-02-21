@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header, .hero, #menu, footer {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hero {
+  background-color: #ffe5b4;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
