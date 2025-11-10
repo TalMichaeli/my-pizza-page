@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-pizza-page/static/css/main.a81bde21.css",
-    "main.js": "/my-pizza-page/static/js/main.3ef7c9e6.js",
+    "main.css": "/my-pizza-page/static/css/main.b9b8889a.css",
+    "main.js": "/my-pizza-page/static/js/main.f3776ea8.js",
     "static/js/488.2c2c4401.chunk.js": "/my-pizza-page/static/js/488.2c2c4401.chunk.js",
     "static/media/photo16.jpg": "/my-pizza-page/static/media/photo16.91fce814c7c846b2e3fc.jpg",
     "static/media/photo8.jpg": "/my-pizza-page/static/media/photo8.9a271fbc5fdb3cb0780d.jpg",
@@ -24,16 +24,17 @@
     "static/media/photo23.jpg": "/my-pizza-page/static/media/photo23.9747878ce4c024965570.jpg",
     "static/media/photo20.jpg": "/my-pizza-page/static/media/photo20.255e69f9f3de95b6ab03.jpg",
     "static/media/NeapolitanPizza.jpeg": "/my-pizza-page/static/media/NeapolitanPizza.162ce50974d457060df2.jpeg",
+    "static/media/logo.png": "/my-pizza-page/static/media/logo.bc62c8f0ab7e150d3938.png",
     "static/media/photo3.jpeg": "/my-pizza-page/static/media/photo3.759af9501bf9f521e69b.jpeg",
     "static/media/delivery.png": "/my-pizza-page/static/media/delivery.8fd6819d8e52e09365bc.png",
     "static/media/oven.png": "/my-pizza-page/static/media/oven.3cd4928b869139e05ca9.png",
     "index.html": "/my-pizza-page/index.html",
-    "main.a81bde21.css.map": "/my-pizza-page/static/css/main.a81bde21.css.map",
-    "main.3ef7c9e6.js.map": "/my-pizza-page/static/js/main.3ef7c9e6.js.map",
+    "main.b9b8889a.css.map": "/my-pizza-page/static/css/main.b9b8889a.css.map",
+    "main.f3776ea8.js.map": "/my-pizza-page/static/js/main.f3776ea8.js.map",
     "488.2c2c4401.chunk.js.map": "/my-pizza-page/static/js/488.2c2c4401.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a81bde21.css",
-    "static/js/main.3ef7c9e6.js"
+    "static/css/main.b9b8889a.css",
+    "static/js/main.f3776ea8.js"
   ]
 }
